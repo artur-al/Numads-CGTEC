@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/poland-cannot-into');
 :root{
   --va: #2D9471;
-  --DS: rgb(70, 196, 207);
+  --DS: #46c4cf;
   --ND: #b7e5bf;
   --az: #211C3B;
   --B: #e8e8e8;
@@ -357,7 +357,7 @@ body::-webkit-scrollbar-thumb {
   transition: .8s;
   scale: 0.9;
   background: var(--ND);
-  height: 350px;
+  height: 25rem;
   border: 5px solid var(--ND);
   border-radius: 1rem;
   margin: 5px;
