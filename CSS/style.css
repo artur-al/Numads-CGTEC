@@ -124,22 +124,6 @@ li:hover{
   transition: 1.8s;
   transform: rotate(360deg);
 }
-.cenoura{
-  transition: .7s ease;
-}
-.cenoura:hover{
-  transition: .3s;
-  transform: scale(1.2) !important;
-}
-.sortido{
-  transition: .7s ease;
-}
-.sortido:hover{
-  transition: .4s;
- transform:matrix(1.96,-2.03,-0.78,1.01,-50,50);
--ms-transform:matrix(1.96,-2.03,-0.78,1.01,-50,50);
--webkit-transform:matrix(1.96,-2.03,-0.78,1.01,-50,50);
-}
 .paodequeijo{
   filter: drop-shadow(0 5px 12px rgba(0,0,0,0.25)) ; 
   width: 210px;
@@ -375,6 +359,15 @@ body::-webkit-scrollbar-thumb {
 }
 .txt{
   width: 70%
+}
+.empresa{
+  height: 32rem;
+  font-size: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+.mvv{
+  font-size: 1.3rem;
 }
 P{
   font-family: 'SONGER Condensed', sans-serif;
