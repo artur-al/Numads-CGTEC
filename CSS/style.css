@@ -1,0 +1,595 @@
+@import url('https://fonts.cdnfonts.com/css/velocista');
+@import url('https://fonts.cdnfonts.com/css/poland-cannot-into');
+:root{
+  --va: #2D9471;
+  --DS: #46c4cf;
+  --ND: #b7e5bf;
+  --az: #211C3B;
+  --B: #e8e8e8;
+  --p: #212121;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: var(--B);
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+img{
+  border-radius: 5px;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: var(--B);
+}
+.nav-list a, .perfumaria a{
+  text-decoration: none;
+  color: var(--ND);
+  list-style: none;
+  font-family: 'Poland Cannot Into', sans-serif;
+}
+.header {
+  background: var(--DS);
+  padding-inline: 1em;
+}
+.nav {
+  max-width: 1280px;
+  height: 80px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2.5rem;
+  color: var(--ND);
+  font-family: 'VELOCISTA';
+  font-style: italic;
+  font-weight: 850;
+  src: local('VELOCISTA'), url('https://fonts.cdnfonts.com/s/18155/Velocista-Demo-FFP.woff') format('woff');
+}
+.logo-img{
+  display: none;
+}
+.nav-list {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+.menu:hover{
+  width: 150%;
+  height: 50%;
+  border-radius: 25%;
+  border-bottom: #222f3e;
+  color: var(--B);
+  background: var(--p);
+}
+.nav-list a {
+  font-size: 1.3em;
+  color: var(--ND);
+  padding-block: 1em;
+}
+.img-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.perfumaria{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.organizador{
+  display: block;
+}
+.nossosP{
+  text-shadow: 8px 3px 11px rgba(70,196,207,1);
+  font-family: 'VELOCISTA';
+  font-size: 3em;
+  font-weight: 850;
+  src: local('VELOCISTA'), url('https://fonts.cdnfonts.com/s/18155/Velocista-Demo-FFP.woff') format('woff');
+}
+.content {
+  width: 100%;
+  margin: 1em;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.7s ease;
+}
+.content:hover {
+  box-shadow: 0 3px 6px var(--p), 0 6px 12px var(--az), 3px 6px 20px var(--p);
+  transform: translate(0px, -8px);
+  transition: 0.6s ease; /* Adicionamos a mesma transição aqui */
+}
+.content img:hover {
+  transition: 1.8s;
+  transform: rotate(360deg);
+}
+.paodequeijo{
+  filter: drop-shadow(0 5px 12px rgba(0,0,0,0.25)) ; 
+  width: 210px;
+  height: 280px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.product-text{
+  text-align: center;
+  color: #b2bec3;
+  padding-top: 0 8px;
+}
+h6{
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+.stars{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.fa{
+  padding: 5px;
+  font-size: 20px;
+  transition: .4s;
+}
+.checked{
+  color: #ff9f49;
+}
+.fa:hover{
+  color: #ff9f49;
+  transform: scale(1.6);
+  transition: .6s;
+}
+.fancy {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--DS);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: var(--DS);
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--DS);
+}
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--B);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--B);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+.fancy:hover {
+  color: var(--B);
+  background: var(--DS);
+  transition: .6s;
+  transform: scale(1.2);
+}
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: var(--va);
+}
+.fancy:hover .text {
+  color: var(--va);
+  padding-left: 1.5em;
+}
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+dialog{
+  border: none;
+  margin: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+  background: var(--B);
+  width: 420px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+dialog h1{
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--az);
+  color: var(--B);
+  height: 70px;
+  border-radius: 15px;
+}
+dialog.active{
+  height: 450px;
+}
+main.hamburger-active, footer.hamburger-activeF{
+  display: none !important;
+}
+.direitos.hamburger-active{
+  display: none !important;
+}
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid var(--ND);
+  cursor: pointer;
+}  
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: var(--ND);
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+footer{
+  background-color: var(--DS);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
+  bottom: 70;
+  height: 14rem;
+}
+.list-footer{
+  text-align: center;
+  list-style: none;
+  font-size: 1em;
+  color: var(--p);
+}
+.direitos{
+  height: 40px;
+}
+.list-footer:hover{
+  color: #000;
+  cursor:pointer;
+}
+.instituicao{
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--p);
+}
+p{
+  text-align: center;
+  font-size: 1em;
+  align-items: center;
+  color: var(--p);
+}
+body::-webkit-scrollbar {
+  width: 10px;               
+}
+body::-webkit-scrollbar-track {
+  background: #000;       
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;   
+  border-radius: 25px;       
+  border: 12px solid #fff; 
+}
+.pd{-webkit-box-shadow: 7px 13px 19px 12px rgba(33,28,59,1);
+  -moz-box-shadow: 7px 13px 19px 12px rgba(33,28,59,1);
+  box-shadow: 7px 13px 19px 12px rgba(33,28,59,1);
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 250px;
+}
+.box-txt_img{
+  transition: .8s;
+  scale: 0.9;
+  background: var(--ND);
+  height: 25rem;
+  border: 5px solid var(--ND);
+  border-radius: 1rem;
+  margin: 5px;
+  padding: 7px;
+}
+.box-txt_img:hover{
+  cursor:text;
+  transition: .6s;
+  transform:scale(1.1);
+}
+.img-cmd:hover{
+  cursor: grab;
+  transition: 1.5s;
+  transform: translateX(28em);
+}
+.txt{
+  width: 70%
+}
+.empresa{
+  height: 32rem;
+  font-size: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+.mvv{
+  font-size: 1.3rem;
+}
+P{
+  font-family: 'SONGER Condensed', sans-serif;
+}
+.numads{
+  font-family: 'VELOCISTA';
+  font-size: 2rem;
+  filter: brightness(0) saturate(100%) invert(64%) sepia(13%) saturate(1770%) hue-rotate(136deg) brightness(105%) contrast(87%);
+}
+.emb{
+  text-shadow: 8px 3px 11px rgba(70,196,207,1);
+  font-family: 'VELOCISTA';
+  font-size: 2rem;
+}
+.etapas, .custos{
+  font-size: 1.5rem;
+}
+.embalagem{
+  height: 10%;
+}
+.txt-emb{
+  text-align:left;
+}
+.img-cmd{
+  background: var(--az);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 2.5px solid var(--az);
+  height: 150px;
+  width: 30%;
+}
+.list-name:hover{
+  color: var(--B);
+  transform: translateY(-15%);
+  transition: .6s;
+}
+  @media (max-width:825px) {
+    .list-name{
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 750px) {
+    .hamburger {
+      display: block;
+      z-index: 3;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--DS);
+      clip-path: circle(100px at 90% -20%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+    .nav-list li:nth-child(4) a{
+    transition: 0.5s 0.8s;
+    }
+    .nav-list li:nth-child(5) a{
+    transition: 0.5s 1s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    footer{
+        width: 100%;
+    }
+    /*texto primeiro */
+    .box-txt_img{
+      height: 100%;
+    }
+    .img-cmd{
+      display: none;
+    }
+    /* produtos */
+    .content{
+   
+      align-items: center;
+    }
+    .paodequeijo{
+      width: 100%;
+    }
+    .stars{
+      display: none;
+    }
+    .fancy{
+      width: 200px;
+    }
+    .fancy .text{
+      
+    }
+    .organizador{
+    
+    }
+    .logo{
+      display:none
+    }
+    .logo-img{
+      display: flex;
+    }
+    .img-logo{
+      display: none;
+    }
+    .orientadores{
+      font-size: .7rem;
+    }
+    .instituicao{
+      width: 50%;
+      font-size: .8rem;
+    }
+    .direitos{
+      font-size: .6rem;
+    }
+    .list-name{
+      font-size: .7rem;
+    }
+  }
+  @media only screen and (min-width: 500px) and (max-width: 1500px) {
+    .paodequeijo {
+   
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 1500px) {
+  .content {
+  
+    display: block;
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 1100px) {
+.fancy::before {
+
+}
+}
+@media only screen and (max-width: 1100px) {
+ 
+}
+@media only screen and (max-width: 500px) {
+  
+}
+@media only screen and (max-width: 500px) {
+
+  h6{
+    font-size: 1rem;
+  }
+  .product-text{
+    font-size: .9rem;
+  }
+  .direitos{
+    font-size: .6rem;
+  }
+  .preco{
+    width: 200px;
+  }
+}
